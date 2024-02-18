@@ -19,8 +19,8 @@ public class PrintInverseDiamondPattern {
     }
 
     private static void diamondPattern(int n) {
-        int nsp = 1;            // No of stars in a row
-        int nst = n / 2;            // No of spaces in a row
+        int nsp = 1;            // No of spaces in a row
+        int nst = n / 2;            // No of stars in a row
 
         for (int i = 1; i <= n; i++) {           // for no. of rows
 
