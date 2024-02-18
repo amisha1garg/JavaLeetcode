@@ -15,10 +15,10 @@ package JavaPrograms;
 public class PrintDiagonal {
 
     public static void main(String[] args) {
-        diamondPattern(5);               // n -> no of rows
+        printPattern(5);               // n -> no of rows
     }
 
-    private static void diamondPattern(int n) {
+    private static void printPattern(int n) {
         int nst = 1;            // No of stars in a row
         int nsp = 0;            // No of spaces in a row
 

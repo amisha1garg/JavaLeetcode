@@ -13,10 +13,10 @@ O/P:
 public class PrintHollowDiamondPattern {
 
     public static void main(String[] args) {
-        diamondPattern(7);               // n -> no of rows
+        printPattern(7);               // n -> no of rows
     }
 
-    private static void diamondPattern(int n) {
+    private static void printPattern(int n) {
         int nsp1 = n / 2;
 //        int nst1 = 1;
         int nsp2 = -1;

@@ -9,10 +9,10 @@ package JavaPrograms;
 public class PrintBottomLeftFiboPattern {
 
     public static void main(String[] args) {
-        leftBottomPattern(5);               // n -> no of rows
+        printPattern(5);               // n -> no of rows
     }
 
-    private static void leftBottomPattern(int n) {
+    private static void printPattern(int n) {
         int a = 0;
         int b = 1;
         int c = a + b;

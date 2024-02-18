@@ -8,10 +8,10 @@ package JavaPrograms;
 
 public class PrintSquarePattern {
     public static void main(String[] args) {
-        squarePattern(4);               // n -> no of rows
+        printPattern(4);               // n -> no of rows
     }
 
-    private static void squarePattern(int n) {
+    private static void printPattern(int n) {
         int nst = n;            // No of stars in a row
         int nsp = 0;            // No of spaces in a row
 

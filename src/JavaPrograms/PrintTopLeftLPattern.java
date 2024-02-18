@@ -10,10 +10,10 @@ package JavaPrograms;
 public class PrintTopLeftLPattern {
 
     public static void main(String[] args) {
-        topLeftPattern(5);               // n -> no of rows
+        printPattern(5);               // n -> no of rows
     }
 
-    private static void topLeftPattern(int n) {
+    private static void printPattern(int n) {
         int nst = 5;            // No of stars in a row
         int nsp = 0;            // No of spaces in a row
 

@@ -15,10 +15,10 @@ O/P:
 public class PrintInverseDiamondPattern {
 
     public static void main(String[] args) {
-        diamondPattern(7);               // n -> no of rows
+        printPattern(7);               // n -> no of rows
     }
 
-    private static void diamondPattern(int n) {
+    private static void printPattern(int n) {
         int nsp = 1;            // No of spaces in a row
         int nst = n / 2;            // No of stars in a row
 
