@@ -1,21 +1,21 @@
-package JavaPrograms;
+package JavaPrograms.basicPatterns;
 
 // O/P:
-//         *	*	*	*   *
-//              *   *	*	*
-//                  *	*	*
-//                      *	*
 //                          *
+//                      *	*
+//                  *	*	*
+//              *   *	*	*
+//         *	*	*	*   *
 
-public class PrintTopRightLPattern {
+public class PrintBottomRightLPattern {
 
     public static void main(String[] args) {
         printPattern(5);               // n -> no of rows
     }
 
     private static void printPattern(int n) {
-        int nst = n;            // No of stars in a row
-        int nsp = 0;            // No of spaces in a row
+        int nst = 1;            // No of stars in a row
+        int nsp = n - 1;            // No of spaces in a row
 
         for (int i = 1; i <= n; i++) {           // for no. of rows
 
@@ -25,13 +25,13 @@ public class PrintTopRightLPattern {
             }
 
             // second inner loop for stars
-            for (int j = nst; j >= 1; j--) {        // for no. of stars
+            for (int j = 1; j <= nst; j++) {        // for no. of stars
                 System.out.print("*\t");
             }
 
             // Update nst and nsp
-            nst--;
-            nsp++;
+            nst++;
+            nsp--;
             System.out.println();
         }
     }

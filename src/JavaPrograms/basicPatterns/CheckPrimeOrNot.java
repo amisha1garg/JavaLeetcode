@@ -1,4 +1,4 @@
-package JavaPrograms;
+package JavaPrograms.basicPatterns;
 
 public class CheckPrimeOrNot {
 

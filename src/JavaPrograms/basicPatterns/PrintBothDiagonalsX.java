@@ -1,18 +1,18 @@
-package JavaPrograms;
+package JavaPrograms.basicPatterns;
 /*
 
 // O/P:
 
-*
-    *
+*                *
+    *        *
         *
-            *
-                *
+    *       *
+*               *
 
 */
 
 
-public class PrintDiagonal {
+public class PrintBothDiagonalsX {
 
     public static void main(String[] args) {
         printPattern(5);               // n -> no of rows
@@ -20,7 +20,7 @@ public class PrintDiagonal {
 
     private static void printPattern(int n) {
         int nst = 1;            // No of stars in a row
-        int nsp = 0;            // No of spaces in a row
+        int nsp = n - 1;            // No of spaces in a row
 
         /*for (int i = 1; i <= n; i++) {           // for no. of rows
 
@@ -33,21 +33,20 @@ public class PrintDiagonal {
             System.out.print("*\t");
 
             // Update nst and nsp
-            nsp++;
+            nsp--;
             System.out.println();
         }*/
 
 
-        // Gap method           diagonal - subtraction
+        // Gap method       Anti diagonal - addition
         for (int i = 1; i <= n; i++) {           // for no. of rows
             for (int j = 1; j <= n; j++) {
-                if (i - j == 0) {
+                if ((i + j) == (n + 1) || (i == j)) {
                     System.out.print("*\t");
                 } else
                     System.out.print("\t");
             }
             System.out.println();
         }
-
     }
 }

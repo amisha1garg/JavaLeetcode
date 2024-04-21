@@ -1,4 +1,4 @@
-package JavaPrograms;
+package JavaPrograms.basicPatterns;
 
 public class PrintMultiplicationTable {
     public static void main(String[] args) {
