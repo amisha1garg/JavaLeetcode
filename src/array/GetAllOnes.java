@@ -12,8 +12,7 @@ public class GetAllOnes {
 
     public static int getAllOnes(int arr[], int start, int end) {
 
-        int length = arr.length; // 8
-        int mid = (start + end) / 2; // 4 //1 // 2 // 3
+        int mid = (start + end) / 2;
         int firstIndex = -1;
 
         if (start == end && arr[mid] == 0) {
@@ -25,14 +24,14 @@ public class GetAllOnes {
         }
 
         if (arr[mid] == 1) {
-            firstIndex = mid; //3
+            firstIndex = mid;
             getAllOnes(arr, start, mid - 1);
         }
         if (arr[mid] == 0) {
             getAllOnes(arr, mid + 1, end);
         }
 
-        return firstIndex; // 3
+        return firstIndex;
     }
 
 
